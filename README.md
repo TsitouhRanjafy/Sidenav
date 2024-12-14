@@ -1,5 +1,9 @@
 # Menu
 
+<img src="https://github.com/user-attachments/assets/a9b567c7-e670-468b-a9b5-48e30f12f42a" width="900">
+
+<img src="https://github.com/user-attachments/assets/6e1c61a7-20ea-4d40-bbc7-a2f5b41cb659" width="900">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
 
 ## Development server
