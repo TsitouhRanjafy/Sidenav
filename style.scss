@@ -13,17 +13,31 @@
     width:max-content;
     height: 100vh; 
     background-color: #242424;
-    padding: 10px 3px;
+    padding: 24px 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    box-shadow: 0px 0px 10px black;
+    .logo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        p{
+            width: min-content;
+            padding: 17px;
+            background-color: white;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
     .level1{
-        margin: 0;
         div{
             border-radius: 8px;
             border: solid rgb(255, 255, 255) 1px ;
             min-width: 200px;
-            padding: 8px;
+            padding: 10px 10px;
             cursor: pointer;
             &:hover{
                 background-color: white;
