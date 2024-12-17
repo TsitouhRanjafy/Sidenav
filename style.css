@@ -1,0 +1,75 @@
+* {
+  font-size: 24px;
+  font-family: sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: max-content;
+  height: 100vh;
+  background-color: #242424;
+  padding: 10px 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container .level1 {
+  margin: 0;
+}
+.container .level1 div {
+  border-radius: 8px;
+  border: solid rgb(255, 255, 255) 1px;
+  min-width: 200px;
+  padding: 8px;
+  cursor: pointer;
+}
+.container .level1 div:hover {
+  background-color: white;
+  color: black;
+}
+.container .level1.level1-titre2 {
+  position: relative;
+  z-index: 40;
+}
+.container .level1.level1-titre2 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .level1.level1-titre2 div .icon {
+  width: 24px;
+  height: 24px;
+}
+.container .level1.level1-titre2 div:hover .icon path {
+  stroke: black;
+  d: path("m19.5 8.25-7.5 7.5-7.5-7.5");
+}
+.container .level1.level1-titre2 .level2 {
+  position: absolute;
+  display: none;
+  transition: position 300ms ease-in;
+  top: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.container .level1.level1-titre2 .level2:hover {
+  color: rgb(100, 97, 255);
+}
+.container .level1.level1-titre2:hover div .icon path {
+  d: path("m19.5 8.25-7.5 7.5-7.5-7.5");
+}
+.container .level1.level1-titre2:hover .level2 {
+  position: relative;
+  display: block;
+  transition: pos ition 300ms ease-in;
+}
+
+/*# sourceMappingURL=style.css.map */

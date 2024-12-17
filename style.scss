@@ -1,0 +1,82 @@
+* {
+    font-size: 24px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    width:max-content;
+    height: 100vh; 
+    background-color: #242424;
+    padding: 10px 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .level1{
+        margin: 0;
+        div{
+            border-radius: 8px;
+            border: solid rgb(255, 255, 255) 1px ;
+            min-width: 200px;
+            padding: 8px;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+        &.level1-titre2{
+            position:relative;
+            z-index: 40;
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .icon{
+                    width: 24px;
+                    height: 24px;
+                }
+                &:hover{
+                    .icon path{
+                        stroke: black;
+                        d: path('m19.5 8.25-7.5 7.5-7.5-7.5');
+                    }
+                }
+            }
+            .level2{
+                position: absolute;   
+                display: none;
+                transition: position 300ms ease-in; 
+                top: 0;
+                margin-top: 10px;
+                cursor: pointer;
+                margin-left: 20px;
+                font-size: 18px;
+                &:hover{
+                    color: rgb(100, 97, 255);
+                }
+                
+            }
+            &:hover{
+                div{
+                    .icon path{
+                        d: path('m19.5 8.25-7.5 7.5-7.5-7.5');
+                    }
+                }
+                .level2{
+                    position: relative;   
+                    display: block;
+                    transition: pos ition 300ms ease-in;
+                }
+            }
+        }
+    }
+    
+
+}    
