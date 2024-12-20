@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color: white;
+}
+
+body {
+    background: #242424;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    .container{
+        .slide-wrapper{
+            .card-list{
+                .card-item{
+                    background-color: rgba(255,255,255,0.2); 
+                    width: 400px;
+                    padding: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255,255,255,0.5 );
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 100%;
+                        margin-bottom: 40px;
+                        border: 3px solid #fff;
+                        padding: 4px;
+                    }
+                    .user-name{
+
+                    }
+                    .user-profession{
+                        font-size: 1.15rem;
+                        color: #E3E3E3;
+                        font-weight: 500;
+                        margin: 14px 0 40px;
+                    }
+                    .message-button{
+                        font-size: 1.25rem;                        
+                        padding: 10px 35px;
+                        color: #030728;
+                        border-radius: 6px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        border: 1px solid transparent;
+                        transition: 0.2s ease;
+                        &:hover{
+                            background: rgba(255,255,255,0.1);
+                            border: 1px solid #fff;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
