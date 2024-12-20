@@ -1,4 +1,4 @@
-### Slider et Pagination avec SwiperJS
+### Slider and Pagination with SwiperJS
 
 ## Preview 
 
